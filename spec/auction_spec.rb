@@ -13,14 +13,14 @@ describe 'Auction' do
       @auction = Auction.new
     end
 
-    it 'Objects exist' do 
+    it 'Objects exist' do
       expect(@item1).to be_an_instance_of Item
       expect(@item2).to be_an_instance_of Item
       expect(@attendee).to be_an_instance_of Attendee
       expect(@auction).to be_an_instance_of Auction
     end
 
-    xit 'Item has attributes' do
+    it 'Item has attributes' do
       expect(@item1.name).to eq "Chalkware Piggy Bank"
       expect(@item2.name).to eq "Bamboo Picture Frame"
     end

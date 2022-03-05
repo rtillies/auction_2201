@@ -51,4 +51,12 @@ describe 'Iteration 3' do
     }
     expect(@auction.bidder_info).to eq expected
   end
+
+  it 'Item #bids before closing' do
+    expected = {
+      @attendee1 => 22,
+      @attendee2 => 20
+    }
+    expect(@item1.bids).to eq expected
+  end
 end

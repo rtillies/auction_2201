@@ -46,7 +46,7 @@ describe 'Iteration 2' do
     expect(@item1.current_high_bid).to eq 22
   end
 
-  it 'Item #unpopular_items 3 items' do
+  it 'Auction #unpopular_items 3 items' do
     @item1.add_bid(@attendee2, 20)
     @item1.add_bid(@attendee1, 22)
     @item4.add_bid(@attendee3, 50)
@@ -55,7 +55,7 @@ describe 'Iteration 2' do
     expect(@auction.unpopular_items).to eq expected
   end
 
-  it 'Item #unpopular_items 2 items' do
+  it 'Auction #unpopular_items 2 items' do
     @item1.add_bid(@attendee2, 20)
     @item1.add_bid(@attendee1, 22)
     @item4.add_bid(@attendee3, 50)
@@ -65,7 +65,7 @@ describe 'Iteration 2' do
     expect(@auction.unpopular_items).to eq expected
   end
 
-  it 'Item #potential_revenue' do
+  it 'Auction #potential_revenue' do
     @item1.add_bid(@attendee2, 20)
     @item1.add_bid(@attendee1, 22)
     @item4.add_bid(@attendee3, 50)

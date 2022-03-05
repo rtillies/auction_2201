@@ -22,4 +22,10 @@ class Auction
   def potential_revenue
     @items.sum {|item| item.current_high_bid.to_i}
   end
+
+  def bidders
+    @items.flat_map do |item|
+      item.bids.map { |bid, amount| bid.name }
+    end.uniq
+  end
 end

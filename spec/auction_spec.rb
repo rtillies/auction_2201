@@ -30,7 +30,7 @@ describe 'Auction' do
       expect(@attendee.budget).to eq 50
     end
 
-    xit 'Auction has attributes' do
+    it 'Auction has attributes' do
       expect(@auction.items).to eq []
     end
 

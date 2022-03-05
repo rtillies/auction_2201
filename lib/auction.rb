@@ -28,4 +28,24 @@ class Auction
       item.bids.map { |bid, amount| bid.name }
     end.uniq
   end
+
+  def bidder_info
+    info = Hash.new
+    @items.each do |item|
+      item.bids.each do |attendee, bid|
+        if !info.include?(attendee)
+          info[attendee] = Hash.new
+          info[attendee][:budget] = attendee.budget
+          info[attendee][:items] = []
+        end
+        info[attendee][:items] << item
+        # binding.pry
+      end
+    end
+    info
+    # bidders.each do |bidder|
+    #   binding.pry
+    #   @info[bidder][:budget] = bidder.budget
+    # end
+  end
 end

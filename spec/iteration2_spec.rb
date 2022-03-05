@@ -54,4 +54,14 @@ describe 'Iteration 2' do
     expected = [@item2, @item3, @item5]
     expect(@auction.unpopular_items).to eq expected
   end
+
+  it 'Item #unpopular_items 2 items' do
+    @item1.add_bid(@attendee2, 20)
+    @item1.add_bid(@attendee1, 22)
+    @item4.add_bid(@attendee3, 50)
+    @item3.add_bid(@attendee2, 15)
+
+    expected = [@item2, @item5]
+    expect(@auction.unpopular_items).to eq expected
+  end
 end

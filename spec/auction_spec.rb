@@ -13,7 +13,7 @@ describe 'Auction' do
       @auction = Auction.new
     end
 
-    it 'Objects exist' do
+    it 'Objects exist' do 
       expect(@item1).to be_an_instance_of Item
       expect(@item2).to be_an_instance_of Item
       expect(@attendee).to be_an_instance_of Attendee

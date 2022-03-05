@@ -14,4 +14,8 @@ class Auction
   def item_names
     @items.map { |item| item.name  }
   end
+
+  def unpopular_items
+    @items.select {|item| item.bids.count == 0}
+  end
 end

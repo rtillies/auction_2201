@@ -5,6 +5,6 @@ class Attendee
 
   def initialize(name: this_name, budget: this_budget)
     @name = name
-    @budget = budget[1..-1].to_f
+    @budget = budget[1..-1].to_i
   end
 end

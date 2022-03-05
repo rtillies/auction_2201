@@ -28,7 +28,7 @@ describe 'Iteration 2' do
     expect(@item1.bids).to eq ({})
   end
 
-  xit 'Item #add_bid' do
+  it 'Item #add_bid' do
     @item1.add_bid(@attendee2, 20)
     @item1.add_bid(@attendee1, 22)
 

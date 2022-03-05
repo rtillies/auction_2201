@@ -40,7 +40,7 @@ describe 'Auction' do
       expect(@auction.items).to eq [@item1, @item2]
     end
 
-    xit 'Auction #item_names' do
+    it 'Auction #item_names' do
       @auction.add_item(@item1)
       @auction.add_item(@item2)
 

@@ -25,7 +25,7 @@ describe 'Auction' do
       expect(@item2.name).to eq "Bamboo Picture Frame"
     end
 
-    xit 'Attendee has attributes' do
+    it 'Attendee has attributes' do
       expect(@attendee.name).to eq "Megan"
       expect(@attendee.budget).to eq 50
     end

@@ -39,13 +39,8 @@ class Auction
           info[attendee][:items] = []
         end
         info[attendee][:items] << item
-        # binding.pry
       end
     end
     info
-    # bidders.each do |bidder|
-    #   binding.pry
-    #   @info[bidder][:budget] = bidder.budget
-    # end
   end
 end

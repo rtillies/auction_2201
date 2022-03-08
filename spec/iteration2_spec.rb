@@ -12,9 +12,9 @@ describe 'Iteration 2' do
     @item4 = Item.new('2 Days Dogsitting')
     @item5 = Item.new('Forever Stamps')
 
-    @attendee1 = Attendee.new(name: 'Megan', budget: '$50')
-    @attendee2 = Attendee.new(name: 'Bob', budget: '$75')
-    @attendee3 = Attendee.new(name: 'Mike', budget: '$100')
+    @attendee1 = Attendee.new({name: 'Megan', budget: '$50'})
+    @attendee2 = Attendee.new({name: 'Bob', budget: '$75'})
+    @attendee3 = Attendee.new({name: 'Mike', budget: '$100'})
 
     @auction = Auction.new
     @auction.add_item(@item1)
